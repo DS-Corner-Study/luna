@@ -9,7 +9,6 @@ const TodoList = ({ todo, onUpdate, onDelete }) => {
   };
 
   const analyzeTodo = useMemo(() => {
-    console.log("호출");
     const totalCount = todo.length;
     const doneCount = todo.filter((it) => it.isDane).length;
     const notDoneCount = totalCount - doneCount;

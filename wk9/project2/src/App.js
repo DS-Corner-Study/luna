@@ -64,11 +64,6 @@ function App() {
     idRef.current += 1; 
   };
 
-  // const onCreate = useCallback(() => {
-  //   setState((state) => [newItem, ...state]);
-  // }, []);
-
-
   const onUpdate = useCallback((targetId) => { 
     dispatch({
       type: "UPDATE",
